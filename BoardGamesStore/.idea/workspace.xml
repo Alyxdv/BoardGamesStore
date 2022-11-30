@@ -5,23 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e692668b-5324-4b86-a2a1-e3c15961111e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/BoardGamesStore.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/Accessories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/AvatarBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main/AvatarArmorTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main/AvatarClassificationEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main/AvatarColorEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main/AvatarSpeciesEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main/AvatarWeaponsEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/AvatarTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/InventoryGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/ModelNumberGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main/CustomDice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main/SampleOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main/SampleReceipt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Avatars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/BoardExpansion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/BoardGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/BoardGameInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/CardPackExpansion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/CloudTravels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/DiceSides.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/ExpansionPack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/FamilyGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/GryphonsAndChimeras.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/GuessThePlace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/PiratesOcean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/PriceInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/RolePlayGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/ShowYourTalent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/SpaceRunners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/StrategicGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/AvatarBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/AvatarArmorTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/AvatarArmorTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/AvatarTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/AvatarTemplate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +41,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -50,14 +61,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
