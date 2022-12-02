@@ -1,12 +1,12 @@
 package Main;
 
 import Model.AvatarTemplate;
-import Model.Avatars;
 import Model.BoardGame;
+import Model.BoardGameInterface;
 
 import java.util.ArrayList;
 
-public class SampleReceipt {
+public class SampleReceipt implements BoardGameInterface {
     private double total = 0.0;
 
     ArrayList<BoardGame> boardGameCart;
@@ -20,7 +20,10 @@ public class SampleReceipt {
         showBoardGameCart();
         showAvatarCart();
         showShipping();
-        // prep for sale (promo)
+        //prep for sale below
+        assembleComponents();
+        provideTutorial();
+        checkForDefects();
     }
 
     private void showTitle() {
@@ -45,10 +48,13 @@ public class SampleReceipt {
     private void showAvatarCart() {
         if(avatarCart.size() > 0) {
             for(AvatarTemplate avatarChoice: avatarCart) {
-                System.out.print("Avatar: " + avatarChoice.getSpecies().toString().toLowerCase() +" "+ avatarChoice.getClassification().toString().toLowerCase());
-                System.out.println(", with " + avatarChoice.getHairColor().toString().toLowerCase() +" hair, "+ avatarChoice.getArmorColor().toString().toLowerCase() +" "+
-                        avatarChoice.getArmorType().toString().toLowerCase() + " armor, and a "+ avatarChoice.getWeaponChoice().toString().toLowerCase());
-                String price = String.format("%27s", "$" + avatarChoice.getPrice());
+                System.out.print("Avatar: " + avatarChoice.getSpecies().toString().toLowerCase()
+                        +" "+ avatarChoice.getClassification().toString().toLowerCase());
+                System.out.println(" with " + avatarChoice.getHairColor().toString().toLowerCase() +" hair, ");
+                System.out.println(avatarChoice.getArmorColor().toString().toLowerCase() +" "+
+                        avatarChoice.getArmorType().toString().toLowerCase() + " armor, and a "+
+                        avatarChoice.getWeaponChoice().toString().toLowerCase());
+                String price = String.format("%42s", "$" + avatarChoice.getPrice());
                 System.out.print(price);
                 System.out.println();
                 total += avatarChoice.getPrice();
@@ -91,5 +97,30 @@ public class SampleReceipt {
             System.out.print("*");
         }
         System.out.println();
+    }
+
+    @Override
+    public void assembleComponents() {
+        System.out.println("All games and Avatars come are checked\n to ensure no pieces are missing before sale.");
+        System.out.println();
+    }
+
+    @Override
+    public void provideTutorial() {
+        System.out.println("All boardgames come with printed instructions,\n" +
+                "or you can find further instruction online at" +
+                "www.theboardgamestore.com\\instructions.");
+        System.out.println();
+    }
+
+    @Override
+    public void checkForDefects() {
+        System.out.println("Every item is checked for defects before sale.");
+        System.out.println();
+    }
+
+    @Override
+    public String getModel() {
+        return null;
     }
 }

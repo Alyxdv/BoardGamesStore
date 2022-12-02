@@ -38,16 +38,15 @@ public class AvatarTemplate implements PriceInterface{
                 AvatarColorEnum.BLACK, AvatarColorEnum.BROWN, AvatarWeaponsEnum.DAGGER,
                 AvatarArmorTypeEnum.LEATHER, 35.00);
     }
-//this.name = itemName;
-
-
-    public String getItemName() {
-        return name;
-    }
 
     @Override
     public double getPrice() {
-        return price;
+        return 35.00;
+    }
+
+    public String toString() {
+        String price = String.format("%24s", "$" + getPrice());
+        return "  " + price;
     }
 
 

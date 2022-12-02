@@ -29,16 +29,16 @@ public class SampleOrder {
     }
 
     private void buySomething() {
-        System.out.println("What kind of Board Games would you like?");
-        System.out.println("Your options are :\n1 for Avatars \n2 for a Board Game");
+        System.out.println("What kind of items are you interested in?");
+        System.out.println("Your options are :\n1 for Avatars\n2 for a Board Game");
         String type = userIn.next();
         validateSomething(type);
     }
 
     private void buyBoardGame() {
-        System.out.println("Are you here to buy Avatars or a Board Game or both?");
+        System.out.println("Which Board Game would you like?");
         System.out.println("Your options are : \nc - Guess The Place\n" +
-                "d - Show YOur Talent\nt - Space Runners\nv - Pirates Ocean" +
+                "d - Show Your Talent\nt - Space Runners\nv - Pirates Ocean\n" +
                 "d - Gryphons and Chimeras\nt - Cloud Travels\n");
         String type = userIn.next();
         validateBoardGameType(type);
@@ -67,7 +67,7 @@ public class SampleOrder {
 
     private void buyAvatars() {
         System.out.println("What Avatars are you interested in ?");
-        System.out.print("Choose from the lists below to build your personalized avatar!");
+        System.out.println("Choose from the lists below to build your personalized avatar!");
         boardGameExtra = new AvatarTemplate();
         chooseSpecies();
         classificationType();
@@ -86,7 +86,7 @@ public class SampleOrder {
     }
 
     private void classificationType() {
-        System.out.print("What class is your avatar?");
+        System.out.println("What class is your avatar?");
         System.out.print("Your choices are:\n1. Fighter\n2. Rogue\n3. Mage\n4. Ranger\n5. Necromancer\n");
         String type = userIn.next();
         validateClassification(type.toLowerCase());
@@ -94,7 +94,7 @@ public class SampleOrder {
 
     private void armorType() {
         System.out.println("What type of armor would you like your avatar to have?");
-        System.out.println("Your choices are:\n1. Leather\n2. Chainmail\n3. Platearmor\n");
+        System.out.println("Your choices are:\n1. Leather\n2. Chain mail\n3. Plate armor\n");
         String type = userIn.next();
         validateArmorType(type.toLowerCase());
     }
@@ -130,7 +130,7 @@ public class SampleOrder {
     }
 
     private void offerUpgrades() {
-        System.out.println("We offer upgrades for your Dices besides dice color.");
+        System.out.println("We offer upgrades for your game besides dice color.");
         System.out.println("We offer the following:\nCE - Card Expansion\nBE - Board Expansion" +
                 "\nDE - Dice Side Count Changes\nnone - for no upgrades");
         String upgrade = userIn.next();
@@ -138,9 +138,9 @@ public class SampleOrder {
     }
 
     private void customDiceOffer(BoardGame boardGame) {
-        System.out.println("Our Dices come with a default paint color.");
-        System.out.println("Your current dice color is " + boardGame.getColor().toString().toLowerCase());
-        System.out.println("Would you like this dice with a different color. yes or no");
+        System.out.println("Our dice come with a default paint color.");
+        System.out.println("Your current die color is " + boardGame.getColor().toString().toLowerCase());
+        System.out.println("Would you like these dice in a different color. Yes or No");
         String choice = userIn.next();
         switch (choice.toLowerCase()) {
             case "yes":
@@ -155,8 +155,8 @@ public class SampleOrder {
     }
 
     private void customDiceChange(BoardGame boardGame) {
-        System.out.println("What dice color would you like?");
-        System.out.println("Your choices are:\nbk - black\nbl - blue\n +" +
+        System.out.println("What color dice would you like?");
+        System.out.println("Your choices are:\nbk - black\nbl - blue\n" +
                 "ch - chrome\ngr - green\nrd - red\ngd - gold (extra charge)");
         String color = userIn.next();
         validateColorChoice(color);
@@ -164,7 +164,7 @@ public class SampleOrder {
     }
 
     private void validateColorChoice(String color) {
-        switch(color) {
+        switch(color.toLowerCase()) {
             case "bk":
                 boardGameChoice.paintDice(CustomDice.BLACK);
                 break;
@@ -179,6 +179,9 @@ public class SampleOrder {
                 break;
             case "rd":
                 boardGameChoice.paintDice(CustomDice.RED);
+                break;
+            case "gd":
+                boardGameChoice.paintDice(CustomDice.GOLD);
                 break;
             default:
                 System.out.println("You have entered an incorrect color.");
@@ -235,13 +238,13 @@ public class SampleOrder {
 
     private void validateUpgrade(String upgrade) {
         switch (upgrade.toLowerCase()) {
-            case "CE":
+            case "ce":
                 boardGameChoice = new CardPackExpansion(boardGameChoice);
                 break;
-            case "BE":
+            case "be":
                 boardGameChoice = new BoardExpansion(boardGameChoice);
                 break;
-            case "DE":
+            case "de":
                 boardGameChoice = new DiceSides(boardGameChoice);
                 break;
             case "none":
@@ -275,35 +278,6 @@ public class SampleOrder {
                 buyBoardGame();
         }
     }
-
-   /* private void validateAvatar (String choice) {
-        switch (choice) {
-            case "h":
-                boardGameExtra = new Avatars("Helmet", 29.99);
-                break;
-            case "g":
-                boardGameExtra = new Avatars("Gloves", 19.99);
-                break;
-            case "b":
-                boardGameExtra = new Avatars("Bell", 9.99);
-                break;
-            case "bk":
-                boardGameExtra = new Avatars("Basket", 29.99);
-                break;
-            case "t":
-                boardGameExtra = new Avatars("Tire Pump", 39.99);
-                break;
-            case "bh":
-                boardGameExtra = new Avatars("Bottle & Holder", 34.99);
-                break;
-            case "l":
-                boardGameExtra = new Avatars("Gloves", 36.99);
-                break;
-            default:
-                System.out.println("You have entered an invalid choice");
-                buyAvatars();
-        }
-    }*/
 
     private void validateSomething(String type) {
         switch (type) {
