@@ -38,17 +38,4 @@ public class DiceSides extends ExpansionPack{
     public CustomDice getColor() {
         return CustomDice.GOLD;
     }
-
-    private void setColor() {
-        gameWithExpansion.paintDice(CustomDice.GOLD);
-    }
-
-    @Override
-    public SideChangeEnum getSides() {
-        return SideChangeEnum.SIX;
-    }
-
-    private void setSides() {
-        gameWithExpansion.changeSides(SideChangeEnum.SIX);
-    }
 }

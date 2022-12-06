@@ -5,7 +5,7 @@ import Main.SideChangeEnum;
 
 public class SpaceRunners extends StrategicGame{
     public SpaceRunners() {
-        super(CustomDice.BLACK, SideChangeEnum.SIX);
+        super(CustomDice.BLACK, SideChangeEnum.TWENTY);
     }
 
     @Override

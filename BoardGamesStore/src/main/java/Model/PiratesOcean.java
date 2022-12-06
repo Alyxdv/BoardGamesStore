@@ -6,7 +6,7 @@ import Main.SideChangeEnum;
 public class PiratesOcean extends StrategicGame{
 
     public PiratesOcean() {
-        super(CustomDice.CHROME, SideChangeEnum.SIX);
+        super(CustomDice.CHROME, SideChangeEnum.TWENTY);
     }
 
     @Override

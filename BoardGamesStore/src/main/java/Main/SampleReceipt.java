@@ -1,8 +1,6 @@
 package Main;
 
-import Model.AvatarTemplate;
-import Model.BoardGame;
-import Model.BoardGameInterface;
+import Model.*;
 
 import java.util.ArrayList;
 
@@ -70,6 +68,13 @@ public class SampleReceipt implements BoardGameInterface {
                 System.out.println("  Dice Type: " + boardGame.getSides().toString().toLowerCase() + " sided.");
                 System.out.println("  Serial #: " + boardGame.getModel());
                 total += boardGame.getPrice();
+                if (boardGame.getStart() == 98384 || boardGame.getStart() == 203938 ) {
+                    System.out.println("Your game comes with\n: a box,\n playing surface,\n standard cards,\n " +
+                            "dice,\n avatar pieces,\n a timer,\n and\n a set of instructions." );
+                } else {
+                    System.out.println("Your game comes with\n: a box\n, playing surface\n, standard cards\n, " +
+                            "dice\n, avatar pieces\n and\n a set of instructions" );
+                }
                 if(boardGame.getExpansionName() != null) {
                     String customPrice = String.format("%15s", "$" + boardGame.getExpansionAmount());
                     System.out.print("  " + boardGame.getExpansionName());

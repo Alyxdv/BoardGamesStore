@@ -5,7 +5,7 @@ import Main.SideChangeEnum;
 
 public class CloudTravels extends RolePlayGame{
     public CloudTravels() {
-        super(CustomDice.BLUE, SideChangeEnum.SIX);
+        super(CustomDice.BLUE, SideChangeEnum.TWENTY);
     }
 
     @Override

@@ -10,7 +10,7 @@ public abstract class BoardGame implements PriceInterface, BoardGameInterface {
 
     public BoardGame(CustomDice color, SideChangeEnum sides) {
         this.color = color;
-        this.sides = sides;
+        this.setSides(sides);
     }
 
     public CustomDice getColor() {
@@ -43,7 +43,7 @@ public abstract class BoardGame implements PriceInterface, BoardGameInterface {
     }
 
     public void changeSides(SideChangeEnum sides) {
-        this.sides = sides;
+        this.setSides(sides);
     }
 
     @Override
@@ -67,5 +67,9 @@ public abstract class BoardGame implements PriceInterface, BoardGameInterface {
     public String toString() {
         String price = String.format("%24s", "$" + getPrice());
         return "  " + getClass().getSimpleName() + price;
+    }
+
+    public void setSides(SideChangeEnum sides) {
+        this.sides = sides;
     }
 }

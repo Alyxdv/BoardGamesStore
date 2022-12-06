@@ -5,7 +5,7 @@ import Main.SideChangeEnum;
 
 public class GryphonsAndChimeras extends RolePlayGame{
     public GryphonsAndChimeras() {
-        super(CustomDice.GREEN, SideChangeEnum.SIX);
+        super(CustomDice.GREEN, SideChangeEnum.TWENTY);
     }
 
     @Override

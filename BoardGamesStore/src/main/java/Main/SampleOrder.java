@@ -37,9 +37,9 @@ public class SampleOrder {
 
     private void buyBoardGame() {
         System.out.println("Which Board Game would you like?");
-        System.out.println("Your options are : \nc - Guess The Place\n" +
-                "d - Show Your Talent\nt - Space Runners\nv - Pirates Ocean\n" +
-                "d - Gryphons and Chimeras\nt - Cloud Travels\n");
+        System.out.println("Your options are : \n1 - Guess The Place\n" +
+                "2 - Show Your Talent\n3 - Space Runners\n4 - Pirates Ocean\n" +
+                "5 - Gryphons and Chimeras\n6 - Cloud Travels\n");
         String type = userIn.next();
         validateBoardGameType(type);
         customDiceOffer(boardGameChoice);
@@ -257,14 +257,13 @@ public class SampleOrder {
     }
 
     private void sideChangeOffer(BoardGame boardGame) {
-        System.out.println("Your current die type is " + boardGame.getSides().toString().toLowerCase() + "sided.");
+        System.out.println("Your current die type is " + boardGame.getSides().toString().toLowerCase() + " sided.");
         System.out.println("Your choices are:\n4\n6\n8\n10\n12\n20");
         String sides = userIn.next();
         diceSidesValidation(sides);
     }
 
     private void diceSidesValidation(String sides) {
-
         switch (sides.toLowerCase()) {
             case "4":
                 boardGameChoice.changeSides(SideChangeEnum.FOUR);
@@ -292,21 +291,27 @@ public class SampleOrder {
 
     private void validateBoardGameType(String type) {
         switch (type) {
-            case "c":
-                boardGameChoice = inventory.getCloudTravelsList().get(0);
-                inventory.getCloudTravelsList().remove(0);
-                break;
-            case "d":
+            case "1":
                 boardGameChoice = inventory.getGuessThePlaceList().get(0);
                 inventory.getGuessThePlaceList().remove(0);
                 break;
-            case "t":
+            case "2":
                 boardGameChoice = inventory.getShowYourTalentList().get(0);
                 inventory.getShowYourTalentList().remove(0);
                 break;
-            case "v":
+            case "3":
+                boardGameChoice = inventory.getSpaceRunnersList().get(0);
+                inventory.getSpaceRunnersList().remove(0);
+            case "4":
                 boardGameChoice = inventory.getPiratesOceansList().get(0);
                 inventory.getPiratesOceansList().remove(0);
+                break;
+            case "5":
+                boardGameChoice = inventory.getGryphonsAndChimerasList().get(0);
+                inventory.getGryphonsAndChimerasList().remove(0);
+            case "6":
+                boardGameChoice = inventory.getCloudTravelsList().get(0);
+                inventory.getCloudTravelsList().remove(0);
                 break;
             default:
                 System.out.println("You have entered an incorrect type");
