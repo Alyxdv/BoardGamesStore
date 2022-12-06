@@ -302,6 +302,7 @@ public class SampleOrder {
             case "3":
                 boardGameChoice = inventory.getSpaceRunnersList().get(0);
                 inventory.getSpaceRunnersList().remove(0);
+                break;
             case "4":
                 boardGameChoice = inventory.getPiratesOceansList().get(0);
                 inventory.getPiratesOceansList().remove(0);
@@ -309,6 +310,7 @@ public class SampleOrder {
             case "5":
                 boardGameChoice = inventory.getGryphonsAndChimerasList().get(0);
                 inventory.getGryphonsAndChimerasList().remove(0);
+                break;
             case "6":
                 boardGameChoice = inventory.getCloudTravelsList().get(0);
                 inventory.getCloudTravelsList().remove(0);

@@ -69,11 +69,11 @@ public class SampleReceipt implements BoardGameInterface {
                 System.out.println("  Serial #: " + boardGame.getModel());
                 total += boardGame.getPrice();
                 if (boardGame.getStart() == 98384 || boardGame.getStart() == 203938 ) {
-                    System.out.println("Your game comes with\n: a box,\n playing surface,\n standard cards,\n " +
-                            "dice,\n avatar pieces,\n a timer,\n and\n a set of instructions." );
+                    System.out.println("Your game comes with: a box, a playing\nsurface, a standard deck of cards," +
+                            " dice,\navatar pieces, a timer, and a set of instructions." );
                 } else {
-                    System.out.println("Your game comes with\n: a box\n, playing surface\n, standard cards\n, " +
-                            "dice\n, avatar pieces\n and\n a set of instructions" );
+                    System.out.println("Your game comes with: a box, a playing\nsurface, a standard cards," +
+                            " dice, \navatar pieces, and a set of instructions");
                 }
                 if(boardGame.getExpansionName() != null) {
                     String customPrice = String.format("%15s", "$" + boardGame.getExpansionAmount());
@@ -114,7 +114,7 @@ public class SampleReceipt implements BoardGameInterface {
     @Override
     public void provideTutorial() {
         System.out.println("All boardgames come with printed instructions,\n" +
-                "or you can find further instruction online at" +
+                "or you can find further instruction online at\n" +
                 "www.theboardgamestore.com\\instructions.");
         System.out.println();
     }
