@@ -1,11 +1,12 @@
 package Model;
 
 import Main.CustomDice;
+import Main.SideChangeEnum;
 
 public class GuessThePlace extends FamilyGame{
 
     public GuessThePlace() {
-        super(CustomDice.GOLD);
+        super(CustomDice.GOLD, SideChangeEnum.SIX);
     }
 
     @Override

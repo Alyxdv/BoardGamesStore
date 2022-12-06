@@ -48,10 +48,10 @@ public class SampleReceipt implements BoardGameInterface {
     private void showAvatarCart() {
         if(avatarCart.size() > 0) {
             for(AvatarTemplate avatarChoice: avatarCart) {
-                System.out.print("Avatar: " + avatarChoice.getSpecies().toString().toLowerCase()
+                System.out.print("  Avatar: " + avatarChoice.getSpecies().toString().toLowerCase()
                         +" "+ avatarChoice.getClassification().toString().toLowerCase());
                 System.out.println(" with " + avatarChoice.getHairColor().toString().toLowerCase() +" hair, ");
-                System.out.println(avatarChoice.getArmorColor().toString().toLowerCase() +" "+
+                System.out.println("  "+ avatarChoice.getArmorColor().toString().toLowerCase() +" "+
                         avatarChoice.getArmorType().toString().toLowerCase() + " armor, and a "+
                         avatarChoice.getWeaponChoice().toString().toLowerCase());
                 String price = String.format("%42s", "$" + avatarChoice.getPrice());
@@ -67,6 +67,7 @@ public class SampleReceipt implements BoardGameInterface {
             for(BoardGame boardGame: boardGameCart) {
                 System.out.println(boardGame);
                 System.out.println("  Dice Color: " + boardGame.getColor());
+                System.out.println("  Dice Type: " + boardGame.getSides().toString().toLowerCase() + " sided.");
                 System.out.println("  Serial #: " + boardGame.getModel());
                 total += boardGame.getPrice();
                 if(boardGame.getExpansionName() != null) {

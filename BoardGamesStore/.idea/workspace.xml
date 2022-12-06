@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e692668b-5324-4b86-a2a1-e3c15961111e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main/SideChangeEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/SampleOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/SampleOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/SampleReceipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/SampleReceipt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/AvatarTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/AvatarTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/BoardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/BoardGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/CloudTravels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/CloudTravels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/DiceSides.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/DiceSides.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/ExpansionPack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ExpansionPack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/FamilyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/FamilyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/GryphonsAndChimeras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/GryphonsAndChimeras.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/GuessThePlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/GuessThePlace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/PiratesOcean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/PiratesOcean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/RolePlayGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/RolePlayGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/ShowYourTalent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ShowYourTalent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/SpaceRunners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/SpaceRunners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/StrategicGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/StrategicGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>

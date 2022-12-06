@@ -1,10 +1,11 @@
 package Model;
 
 import Main.CustomDice;
+import Main.SideChangeEnum;
 
 public class CloudTravels extends RolePlayGame{
     public CloudTravels() {
-        super(CustomDice.BLUE);
+        super(CustomDice.BLUE, SideChangeEnum.SIX);
     }
 
     @Override

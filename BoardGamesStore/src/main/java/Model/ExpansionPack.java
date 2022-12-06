@@ -4,7 +4,7 @@ public abstract class ExpansionPack extends BoardGame{
     protected BoardGame gameWithExpansion;
 
     public ExpansionPack(BoardGame game) {
-        super(game.getColor());
+        super(game.getColor(), game.getSides());
         gameWithExpansion = game;
     }
 

@@ -1,11 +1,12 @@
 package Model;
 
 import Main.CustomDice;
+import Main.SideChangeEnum;
 
 public abstract class StrategicGame extends BoardGame{
 
-    public StrategicGame(CustomDice color) {
-        super(color);
+    public StrategicGame(CustomDice color, SideChangeEnum sides) {
+        super(color, sides);
     }
 
     @Override

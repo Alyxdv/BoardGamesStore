@@ -1,11 +1,12 @@
 package Model;
 
 import Main.CustomDice;
+import Main.SideChangeEnum;
 
 public abstract class RolePlayGame extends BoardGame{
 
-    public RolePlayGame(CustomDice color) {
-        super(color);
+    public RolePlayGame(CustomDice color, SideChangeEnum sides) {
+        super(color, sides);
     }
 
     @Override

@@ -246,12 +246,47 @@ public class SampleOrder {
                 break;
             case "de":
                 boardGameChoice = new DiceSides(boardGameChoice);
+                sideChangeOffer(boardGameChoice);
                 break;
             case "none":
                 break;
             default:
                 System.out.println("You have made an invalid choice");
                 offerUpgrades();
+        }
+    }
+
+    private void sideChangeOffer(BoardGame boardGame) {
+        System.out.println("Your current die type is " + boardGame.getSides().toString().toLowerCase() + "sided.");
+        System.out.println("Your choices are:\n4\n6\n8\n10\n12\n20");
+        String sides = userIn.next();
+        diceSidesValidation(sides);
+    }
+
+    private void diceSidesValidation(String sides) {
+
+        switch (sides.toLowerCase()) {
+            case "4":
+                boardGameChoice.changeSides(SideChangeEnum.FOUR);
+                break;
+            case "6":
+                boardGameChoice.changeSides(SideChangeEnum.SIX);
+                break;
+            case "8":
+                boardGameChoice.changeSides(SideChangeEnum.EIGHT);
+                break;
+            case "10":
+                boardGameChoice.changeSides(SideChangeEnum.TEN);
+                break;
+            case "12":
+                boardGameChoice.changeSides(SideChangeEnum.TWELVE);
+                break;
+            case "20":
+                boardGameChoice.changeSides(SideChangeEnum.TWENTY);
+                break;
+            default:
+                System.out.println("You have made an invalid choice. Please try again.");
+                diceSidesValidation(sides);
         }
     }
 

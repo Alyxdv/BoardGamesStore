@@ -1,6 +1,7 @@
 package Model;
 
 import Main.CustomDice;
+import Main.SideChangeEnum;
 
 public class DiceSides extends ExpansionPack{
 
@@ -40,5 +41,14 @@ public class DiceSides extends ExpansionPack{
 
     private void setColor() {
         gameWithExpansion.paintDice(CustomDice.GOLD);
+    }
+
+    @Override
+    public SideChangeEnum getSides() {
+        return SideChangeEnum.SIX;
+    }
+
+    private void setSides() {
+        gameWithExpansion.changeSides(SideChangeEnum.SIX);
     }
 }

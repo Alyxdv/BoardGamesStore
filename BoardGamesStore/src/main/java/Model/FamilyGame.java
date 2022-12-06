@@ -1,10 +1,11 @@
 package Model;
 
 import Main.CustomDice;
+import Main.SideChangeEnum;
 
 public abstract class FamilyGame extends BoardGame{
-    public FamilyGame(CustomDice color) {
-        super(color);
+    public FamilyGame(CustomDice color, SideChangeEnum sides) {
+        super(color, sides);
     }
 
     @Override

@@ -1,10 +1,11 @@
 package Model;
 
 import Main.CustomDice;
+import Main.SideChangeEnum;
 
 public class SpaceRunners extends StrategicGame{
     public SpaceRunners() {
-        super(CustomDice.BLACK);
+        super(CustomDice.BLACK, SideChangeEnum.SIX);
     }
 
     @Override

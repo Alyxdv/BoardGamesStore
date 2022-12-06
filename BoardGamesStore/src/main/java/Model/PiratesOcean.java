@@ -1,11 +1,12 @@
 package Model;
 
 import Main.CustomDice;
+import Main.SideChangeEnum;
 
 public class PiratesOcean extends StrategicGame{
 
     public PiratesOcean() {
-        super(CustomDice.CHROME);
+        super(CustomDice.CHROME, SideChangeEnum.SIX);
     }
 
     @Override

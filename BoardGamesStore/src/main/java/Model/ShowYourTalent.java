@@ -1,10 +1,11 @@
 package Model;
 
 import Main.CustomDice;
+import Main.SideChangeEnum;
 
 public class ShowYourTalent extends FamilyGame{
     public ShowYourTalent() {
-        super(CustomDice.RED);
+        super(CustomDice.RED, SideChangeEnum.SIX);
     }
 
     @Override
